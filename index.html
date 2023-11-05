@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Tempo na Terra</title>
+</head>
+<body style="background-color: aqua;">
+    <header style="background-color: red;"><h1>TEMPO NA TERRA</h1></header>
+    <section style="background-color: yellow;"><P>O objetivo desse projeto é que com as informações de data/hora de nascimento gere um relogio informando a quantos segundos,minutos,horas e dias a pessoa ja viveu.</P></section>
+    <article style="background-color: green;">
+        
+        <label for="nome">Nome Completo: </label>
+        <input type="text" name="nome" id="nome" required>
+        
+        <label for="dataNascimento">Data de Nascimento: </label>
+        <input type="date" id="dataNascimento" name="dataNascimento">
+        
+        <label for="horaNascimento">Hora de Nascimento: </label>
+        <input type="time" id="horaNascimento" name="horaNascimento">
+
+    </article>
+
+    <section style="background-color: purple;">
+
+        <!-- <button onclick="criar()">CRIAR RELÓGIO</button> -->
+        <div id="criar1"></div>
+        <div id="criar2"></div>
+        <div id="criar3"></div>
+
+        <div id="criar4"></div>
+        <div id="criar5"></div>
+        <div id="criar6"></div> 
+
+    </section>
+    <section style="background-color: blue;">
+
+        <button class="botao" onclick="calcSeg()" >Segundos</button>
+        <button class="botao" onclick="calcMin()">Minutos</button>
+        <button class="botao" onclick="calcHr()">Horas</button>
+        <button class="botao" onclick="calcDias()">Dias</button>
+        <button class="botao" onclick="calcMes()">Meses</button> 
+        <button class="botao" onclick="calcAno()">Anos</button>
+
+    </section>
+    <footer style="background-color: orangered;">
+        <p>&copy; 2023 - Projeto Tempo na Terra.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
